@@ -8,9 +8,8 @@ export default function Contact() {
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold tracking-tight text-center mb-8 text-gray-900">Entre em Contato</h2>
         <p className="text-center text-gray-700 mb-8 max-w-2xl mx-auto">
-          Estou sempre aberto a novas oportunidades e conexões profissionais. 
-          Se você gostaria de discutir projetos de QA, automação de testes ou 
-          qualquer outra oportunidade, sinta-se à vontade para me contatar no LinkedIn.
+          Estou aberto a novas oportunidades e conexões profissionais. 
+          Sinta-se à vontade para me contatar no LinkedIn.
         </p>
         <div className="flex justify-center">
           <Link href="https://www.linkedin.com/in/andrey-oliveira1/" target="_blank" rel="noopener noreferrer">

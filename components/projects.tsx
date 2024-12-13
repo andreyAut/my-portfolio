@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
-import { Laptop, Smartphone, GitBranch, Github } from 'lucide-react'
+import { Laptop, FireExtinguisher, GitBranch, Github } from 'lucide-react'
 import Link from 'next/link'
 
 export default function Projects() {
@@ -9,16 +9,30 @@ export default function Projects() {
     {
       title: 'Testes de E2E com Playwright',
       description: 'Uma automação de Testes E2E para realizar alguns fluxos importantes e aprender mais sobre playwright',
-      technologies: ['Playwright', 'TypeScript'],
+      technologies: ['Playwright', 'TypeScript', 'CI/CD'],
       icon: Laptop,
       githubUrl: 'https://github.com/andreyAut/automation-example-playwright',
     },
     {
-      title: 'Framework de Automação para Apps Móveis',
-      description: 'Desenvolveu um framework de automação personalizado para testes de apps iOS e Android, reduzindo o tempo de execução de testes em 60%.',
-      technologies: ['Appium', 'Java', 'TestNG'],
-      icon: Smartphone,
-      githubUrl: 'https://github.com/seu-usuario/mobile-automation-framework',
+      title: 'Cypress-burn-E2E-tests',
+      description: 'Projeto cujo objetivo é identificar problemas que possam surgir em cenários de uso intensivo e resolvê-los antes do lançamento.',
+      technologies: ['Cypress', 'JavaScipt', 'Cypess-grep', ],
+      icon: FireExtinguisher,
+      githubUrl: 'https://github.com/andreyAut/cypress-burn-E2E-tests',
+    },
+    {
+      title: 'Integração de Pipeline CI/CD',
+      description: 'Integrou testes automatizados no pipeline de CI/CD, permitindo implantações mais rápidas e confiáveis.',
+      technologies: ['Jenkins', 'Docker', 'Git'],
+      icon: GitBranch,
+      githubUrl: 'https://github.com/seu-usuario/cicd-test-integration',
+    },
+    {
+      title: 'Integração de Pipeline CI/CD',
+      description: 'Integrou testes automatizados no pipeline de CI/CD, permitindo implantações mais rápidas e confiáveis.',
+      technologies: ['Jenkins', 'Docker', 'Git'],
+      icon: GitBranch,
+      githubUrl: 'https://github.com/seu-usuario/cicd-test-integration',
     },
     {
       title: 'Integração de Pipeline CI/CD',

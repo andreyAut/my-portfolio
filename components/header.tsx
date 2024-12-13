@@ -1,15 +1,15 @@
 'use client';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { Code } from 'lucide-react';
+import { Rocket } from 'lucide-react';
 
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white shadow-sm">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
-          <Code className="h-6 w-6 text-gray-900" />
-          <TypingEffect texts={['Inovação', 'Inspiração', 'Ideias']} />
+          <Rocket className="h-6 w-6 text-gray-900" />
+          <TypingEffect texts={['Testes', 'Automação']} />
         </Link>
         <nav className="flex items-center space-x-6 text-sm font-medium">
           <Link href="#skills" className="text-gray-700 hover:text-black transition">Habilidades</Link>
@@ -22,47 +22,42 @@ export default function Header() {
   );
 }
 
-type TypingEffectProps = {
-  texts: string[]; // Define que texts é um array de strings
-};
+interface TypingEffectProps {
+  texts: string[]; 
+}
 
-// Componente para o efeito de digitação
-function TypingEffect({ texts }: TypingEffectProps) {
+const TypingEffect: React.FC<TypingEffectProps> = ({ texts }) => {
   const [currentText, setCurrentText] = useState('');
-  const [index, setIndex] = useState(0); // Índice da palavra atual
+  const [index, setIndex] = useState(0); 
   const [isDeleting, setIsDeleting] = useState(false);
-  const [speed, setSpeed] = useState(150); // Velocidade da digitação
+  const [speed, setSpeed] = useState(100); 
 
   useEffect(() => {
     const handleTyping = () => {
-      const fullText = texts[index]; // Palavra atual
+      const fullText = texts[index]; 
 
-      if (!isDeleting) {
-        // Adiciona caractere por caractere
-        setCurrentText(fullText.slice(0, currentText.length + 1));
+      if (isDeleting) {
+       
+        setCurrentText((prev) => fullText.slice(0, prev.length - 1));
+        setSpeed(35); 
 
-        // Quando a palavra completa é exibida, pausa antes de apagar
-        if (currentText === fullText) {
-          setTimeout(() => setIsDeleting(true), 1500); // Pausa de 1 segundo
-        }
-      } else {
-        // Apaga caractere por caractere
-        setCurrentText(fullText.slice(0, currentText.length - 1));
-
-        // Quando apagar completamente, passa para a próxima palavra
         if (currentText === '') {
           setIsDeleting(false);
-          setIndex((prevIndex) => (prevIndex + 1) % texts.length); // Próxima palavra (cíclico)
+          setIndex((prevIndex) => (prevIndex + 1) % texts.length); 
+        }
+      } else {
+       
+        setCurrentText((prev) => fullText.slice(0, prev.length + 1));
+        setSpeed(100); 
+
+        if (currentText === fullText) {
+          setTimeout(() => setIsDeleting(true), 1000); 
         }
       }
-
-      // Ajusta a velocidade para digitar/apagar
-      setSpeed(isDeleting ? 100:100);
     };
 
     const timer = setTimeout(handleTyping, speed);
-
-    return () => clearTimeout(timer); // Limpa o timer para evitar efeitos colaterais
+    return () => clearTimeout(timer);
   }, [currentText, isDeleting, index, texts, speed]);
 
   return (
@@ -71,4 +66,5 @@ function TypingEffect({ texts }: TypingEffectProps) {
       <span className="blinking-cursor">|</span>
     </span>
   );
-}
+};
+
