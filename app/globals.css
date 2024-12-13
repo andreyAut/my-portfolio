@@ -61,6 +61,19 @@ body {
     --chart-5: 340 75% 55%;
   }
 }
+.blinking-cursor {
+  display: inline-block;
+  width: 2px;
+  background-color: black;
+  margin-left: 4px;
+  animation: blink 0.7s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
 
 @layer base {
   * {

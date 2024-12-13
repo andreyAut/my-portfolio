@@ -13,7 +13,7 @@ export default function Contact() {
           qualquer outra oportunidade, sinta-se à vontade para me contatar no LinkedIn.
         </p>
         <div className="flex justify-center">
-          <Link href="https://www.linkedin.com/in/seu-perfil" target="_blank" rel="noopener noreferrer">
+          <Link href="https://www.linkedin.com/in/andrey-oliveira1/" target="_blank" rel="noopener noreferrer">
             <Button className="bg-gray-900 hover:bg-gray-800 text-white">
               <Linkedin className="mr-2 h-5 w-5" />
               Conecte-se no LinkedIn

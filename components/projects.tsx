@@ -7,11 +7,11 @@ import Link from 'next/link'
 export default function Projects() {
   const projects = [
     {
-      title: 'Testes de Plataforma E-commerce',
-      description: 'Liderou testes end-to-end de uma plataforma de e-commerce em larga escala, incluindo testes de performance e segurança.',
-      technologies: ['Selenium', 'JMeter', 'OWASP ZAP'],
+      title: 'Testes de E2E com Playwright',
+      description: 'Uma automação de Testes E2E para realizar alguns fluxos importantes e aprender mais sobre playwright',
+      technologies: ['Playwright', 'TypeScript'],
       icon: Laptop,
-      githubUrl: 'https://github.com/seu-usuario/ecommerce-tests',
+      githubUrl: 'https://github.com/andreyAut/automation-example-playwright',
     },
     {
       title: 'Framework de Automação para Apps Móveis',
@@ -45,7 +45,7 @@ export default function Projects() {
               <CardDescription className="text-gray-700 mb-4">{project.description}</CardDescription>
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.technologies.map((tech, techIndex) => (
-                  <Badge key={techIndex} variant="secondary" className="bg-gray-200 text-gray-800">{tech}</Badge>
+                  <Badge key={techIndex} variant="secondary" className="bg-blue-300 text-gray-800">{tech}</Badge>
                 ))}
               </div>
               <Link href={project.githubUrl} target="_blank" rel="noopener noreferrer">

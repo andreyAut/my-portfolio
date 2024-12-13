@@ -17,10 +17,6 @@ export default function Footer() {
             <Linkedin className="h-5 w-5" />
             <span className="sr-only">LinkedIn</span>
           </Link>
-          <Link href="https://twitter.com/seu-usuario" target="_blank" rel="noreferrer" className="text-gray-600 hover:text-gray-900">
-            <Twitter className="h-5 w-5" />
-            <span className="sr-only">Twitter</span>
-          </Link>
         </div>
       </div>
     </footer>
