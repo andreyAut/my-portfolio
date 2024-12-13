@@ -1,9 +1,9 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { FaClipboardCheck, FaTools, FaBolt, FaSnowman, FaLock, FaPaperPlane, FaWatchmanMonitoring, FaDigitalTachograph, FaDatabase } from 'react-icons/fa';
+import { FaClipboardCheck, FaTools, FaBolt, FaSnowman,FaWatchmanMonitoring, FaDigitalTachograph, FaDatabase } from 'react-icons/fa';
 import { DiJavascript1, DiRuby, DiJava, DiDocker, DiScriptcs, DiPhonegap, DiGithubBadge, DiWebplatform } from 'react-icons/di';
 import 'animate.css';
-import { FcAndroidOs, FcBarChart, FcComments, FcFlowChart, FcPackage, FcPieChart, FcSalesPerformance } from 'react-icons/fc';
-import { FaBuildingLock, FaMagnifyingGlass } from 'react-icons/fa6';
+import { FcBarChart, FcComments, FcPieChart, FcSalesPerformance } from 'react-icons/fc';
+import { FaBuildingLock } from 'react-icons/fa6';
 
 export default function Skills() {
   const skills = [
