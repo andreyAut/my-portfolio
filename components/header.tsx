@@ -22,8 +22,12 @@ export default function Header() {
   );
 }
 
+type TypingEffectProps = {
+  texts: string[]; // Define que texts é um array de strings
+};
+
 // Componente para o efeito de digitação
-function TypingEffect({ texts }) {
+function TypingEffect({ texts }: TypingEffectProps) {
   const [currentText, setCurrentText] = useState('');
   const [index, setIndex] = useState(0); // Índice da palavra atual
   const [isDeleting, setIsDeleting] = useState(false);
