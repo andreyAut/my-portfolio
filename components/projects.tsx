@@ -27,20 +27,8 @@ export default function Projects() {
       icon: GitBranch,
       githubUrl: 'https://github.com/andreyAut/web-scraper-playwright-tests',
     },
-    {
-      title: 'Integração de Pipeline CI/CD',
-      description: 'Integrou testes automatizados no pipeline de CI/CD, permitindo implantações mais rápidas e confiáveis.',
-      technologies: ['Jenkins', 'Docker', 'Git'],
-      icon: GitBranch,
-      githubUrl: 'https://github.com/seu-usuario/cicd-test-integration',
-    },
-    {
-      title: 'Integração de Pipeline CI/CD',
-      description: 'Integrou testes automatizados no pipeline de CI/CD, permitindo implantações mais rápidas e confiáveis.',
-      technologies: ['Jenkins', 'Docker', 'Git'],
-      icon: GitBranch,
-      githubUrl: 'https://github.com/seu-usuario/cicd-test-integration',
-    },
+    
+
   ]
 
   return (
