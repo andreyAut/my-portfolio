@@ -21,7 +21,7 @@ export default function Projects() {
       githubUrl: 'https://github.com/andreyAut/cypress-burn-E2E-tests',
     },
     {
-      title: 'Integração de Pipeline CI/CD',
+      title: 'Scraper de Dados e Validação',
       description: 'Este é um projeto que utiliza Playwright para acessar um site, coletar informações relevantes e validar a veracidade desses dados, salvando os resultados em um formato organizado, como uma planilha ou banco de dados.',
       technologies: ['PlaWright', 'Typescript', 'Excel'],
       icon: GitBranch,
