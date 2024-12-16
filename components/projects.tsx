@@ -22,10 +22,10 @@ export default function Projects() {
     },
     {
       title: 'Integração de Pipeline CI/CD',
-      description: 'Integrou testes automatizados no pipeline de CI/CD, permitindo implantações mais rápidas e confiáveis.',
-      technologies: ['Jenkins', 'Docker', 'Git'],
+      description: 'Este é um projeto que utiliza Playwright para acessar um site, coletar informações relevantes e validar a veracidade desses dados, salvando os resultados em um formato organizado, como uma planilha ou banco de dados.',
+      technologies: ['PlaWright', 'Typescript', 'Excel'],
       icon: GitBranch,
-      githubUrl: 'https://github.com/seu-usuario/cicd-test-integration',
+      githubUrl: 'https://github.com/andreyAut/web-scraper-playwright-tests',
     },
     {
       title: 'Integração de Pipeline CI/CD',
